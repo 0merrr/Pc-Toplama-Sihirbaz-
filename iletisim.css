@@ -1,0 +1,142 @@
+body {
+  background-color: white;
+  padding: 0px;
+  margin: 0%;
+}
+#slider {
+  width: 700px;
+  height: 300px;
+  top: 60px;
+  left: 40px;
+}
+.header {
+  background-color:  #efefef;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+
+}
+.logo {
+  width: 6%;
+  height: auto;
+  border-radius:5px 30px 10px 50px;
+  margin-left: -10px;
+padding-right: 10px;
+
+}
+.search {
+  opacity: 0.5;
+  line-height: 1.5;
+  width: 20%;
+  height: 5%;
+  border-radius: 10px;
+  padding: 20px;
+}
+.search:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 1000px) {
+  .search {
+    height: 0;
+  }
+}
+
+.buton {
+  width: 50px;
+  height: 50px;
+}
+.kolon {
+  float: left;
+  margin-left: 350px;
+  border-radius: 1px;
+  width: 1px;
+  height: 700px;
+  background-color: lightgray;
+  position: absolute;
+}
+
+ul {
+  text-align: left;
+  display: inline;
+  margin: 0;
+  padding: 15px 4px 17px 0;
+  /*
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  */
+}
+ul li {
+  font: bold 12px/18px sans-serif;
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 15px 20px;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+ul li:hover {
+  background: #555;
+  color: #fff;
+}
+ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 150px;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s;
+}
+ul li ul li {
+  background: #555;
+  display: block;
+  color: red;
+  text-shadow: 0 -1px 0 #000;
+}
+ul li ul li:hover {
+  background: #666;
+}
+ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: black;
+  height: 50px;
+  border-style: solid;
+  display: flex;
+  justify-content: space-around;
+}
+
+.copyright {
+  color: red;
+}
+.footerh {
+  color: red;
+}
+.footeri {
+  color: red;
+}
+
+@media only screen and (max-width: 1000px) {
+  ul {
+    margin-left: 5px;
+  }
+  ul li {
+    padding: 5px 10px;
+  }
+  .search {
+    padding: 14px;
+  }
+}
